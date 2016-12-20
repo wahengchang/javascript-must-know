@@ -1,5 +1,5 @@
 function* count(){
-  for (var x = 0; true; x++) {
+  for (var x = 0; x<50; x++) {
     yield x
   }
 }
