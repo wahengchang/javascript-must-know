@@ -3,11 +3,12 @@ class Point {
     this.name = name;
   }
 
+  //Point.printStatic
   static printStatic(_msg) {
     console.log(_msg)
   }
 
-
+  //prototype
   printPrototpye(_msg) {
     console.log('_msg: ', _msg, 'this.name: ', this.name)
   }

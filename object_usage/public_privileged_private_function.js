@@ -1,5 +1,6 @@
-function Constructor(name) {
-  this.userName = name;
+function Constructor(_name, _callback) {
+  this.userName = _name;
+  this.callback = _callback;
 
 
   function Private(_name) {
@@ -14,10 +15,14 @@ function Constructor(name) {
 
 Constructor.prototype.Public = function (_string) {
     this.Privileged(_string);
+    this.callback(_string);
 }
 
+var fun1 = function(_secondName){
+  console.log('_secondName: ', _secondName);
+}
 
-var human = new Constructor('Peter');
+var human = new Constructor('Peter', fun1);
 //Error:
 //human.Private();
 
