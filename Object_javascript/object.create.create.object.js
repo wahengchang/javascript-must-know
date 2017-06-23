@@ -1,4 +1,9 @@
-o1 = Object.create({}, { p: { value: 42 } });
+o1 = Object.create({}, { 
+  p: { 
+    value: 42 
+  } 
+});
+
 o1.p=1;
 //p will be muted
 
@@ -15,7 +20,7 @@ o3 = Object.create({}, {
   }
 });
 
-console.log('o1', o1)
-console.log('o2', o2)
-console.log('o3', o3)
+console.log('o1', o1) //{}
+console.log('o2', o2) //{ p: 42 }
+console.log('o3', o3) //{ p: 42 }
 console.log('o2===o3', o2===o3)
