@@ -13,5 +13,5 @@ Object.defineProperties(obj, {
 });
 
 console.log(obj)
-console.log('obj.property1: ', obj.property1)
-console.log('obj.property2: ', obj.property2)
+console.log('obj.property1: ', obj.property1) // true
+console.log('obj.property2: ', obj.property2) // Hello
