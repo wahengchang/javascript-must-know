@@ -1,6 +1,5 @@
 /////////////// part 1 ////////////////
 const objConst = {body: {id: 1}}
-
 let objLet = {body: {id: 1}}
 
 // difference ?
