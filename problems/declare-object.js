@@ -58,3 +58,5 @@ p2 = 2
 p1.id = 2
 p2.id = 2
 
+// ## Reference
+// https://en.wikipedia.org/wiki/Single_source_of_truth
